@@ -5,6 +5,11 @@ const projects = [
     path: "lidar-lab",
   },
   {
+    title: "Data Science Summit 2025",
+    description: "Wyjazd na Data Science Summit 2025 w Warszawie.",
+    path: "data-science-summit-2025",
+  },
+  {
     title: "Estymacja poziomu wody w Odrze na wysokości Huty Miedzi Głogów.",
     description:
       "Znalezienie oraz opracowanie danych Instytut Meteorologii i Gospodarki Wodnej. Opracowanie modelu matematycznego estymującego poziom wody na podstawie informacji z stacji poprzedzających Głogów.",
