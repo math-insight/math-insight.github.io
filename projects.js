@@ -5,9 +5,14 @@ const projects = [
     path: "lidar-lab",
   },
   {
-    title: "Data Science Summit 2025",
-    description: "Wyjazd na Data Science Summit 2025 w Warszawie.",
+    title: "Koło Naukowe Matematyki Stosowanej Insight na Data Science Summit 2025.",
+    description: "21 listopada 2025 roku uczestniczyliśmy w Data Science Summit 2025 w Warszawie – jednym z największych wydarzeń w Polsce poświęconym analizie danych, uczeniu maszynowemu i zastosowaniom sztucznej inteligencji w przemyśle. Nasz wyjazd odbył się w ramach projektu LiDARLab, a podczas konferencji wysłuchaliśmy wykładów ekspertów z takich firm jak Google Cloud, Microsoft, IBM czy NVIDIA",
     path: "data-science-summit-2025",
+  },
+  {
+    title: "Koło Naukowe Matematyki Stosowanej Insight z wizytą na Wydziale Matematyki Politechniki Wrocławskiej.",
+    description: "27 listopada 2025 roku nasze Koło Naukowe Matematyki Stosowanej Insight odwiedziło Wydział Matematyki Politechniki Wrocławskiej, gdzie przedstawiliśmy działalność naszego Koła oraz projekt LiDARLab. Podczas spotkania zaprezentowaliśmy również wybrane projekty realizowane w ramach KNMS, w tym estymację poziomu wody w Odrze, system śledzenia w squashu czy analizę snu, nawiązując współpracę z czterema kołami naukowymi PWr.",
+    path: "pwr-visit",
   },
   {
     title: "Estymacja poziomu wody w Odrze na wysokości Huty Miedzi Głogów.",
