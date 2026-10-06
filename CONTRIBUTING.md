@@ -56,12 +56,15 @@ W podstronach znajdujących się w `more-about-projects/` ścieżki do obrazów 
 <img src="../images/new-project-name/example.jpg" alt="Opis zdjęcia" />
 ```
 
-Wspólne ikony i favicon na podstronach projektów korzystają ze ścieżek liczonych od katalogu głównego, na przykład:
+Wspólne style, ikony i favicon na podstronach projektów również korzystają ze ścieżek względnych, na przykład:
 
 ```html
-<link rel="stylesheet" href="/styles.css" />
-<link rel="icon" href="/images/icons/icon.png" type="image/png" />
+<link rel="stylesheet" href="../styles.css" />
+<link rel="icon" href="../images/icons/icon.png" type="image/png" />
+<a class="main-page-link" href="../index.html#projects">...</a>
 ```
+
+Nie używaj ścieżek zaczynających się od `/` (np. `/styles.css`). Strona jest serwowana przez GitHub Pages z podkatalogu `/math-insight/`, więc takie ścieżki wskazują poza stronę i kończą się błędem 404.
 
 ### 4. Dodaj kartę projektu na stronie głównej
 
@@ -109,10 +112,12 @@ Jeśli podstrona projektu już istnieje:
 
 ## Konwencje ścieżek
 
-To repozytorium używa dwóch najczęstszych stylów zapisu ścieżek:
+Wszystkie ścieżki do plików lokalnych są względne:
 
 - Pliki w katalogu głównym, takie jak `index.html`, używają ścieżek w rodzaju `styles.css` lub `images/...`
-- Pliki w `more-about-projects/` zwykle używają `../images/...` dla treści strony oraz `/styles.css` dla wspólnych zasobów
+- Pliki w `more-about-projects/` używają `../images/...`, `../styles.css` i `../index.html#projects`
+
+Strona jest hostowana na GitHub Pages pod adresem <https://math-insight.github.io/math-insight/>, czyli w podkatalogu, a nie w katalogu głównym domeny. Ścieżki zaczynające się od `/` są liczone od katalogu głównego domeny, więc na opublikowanej stronie nie działają.
 
 Przy dodawaniu nowej treści najlepiej skopiować sposób zapisu ścieżek z najbardziej podobnego istniejącego pliku.
 
@@ -131,6 +136,7 @@ Przed wypchnięciem zmian sprawdź:
 - strona główna ładuje się poprawnie
 - edytowane podstrony projektów ładują się poprawnie
 - ścieżki do obrazów są poprawne
+- Nie używaj ścieżek zaczynających się od `/` dla plików lokalnych.
 - przyciski `Zobacz więcej.` prowadzą do właściwych stron
 - układ działa poprawnie na urządzeniach mobilnych
 - w treści nie został żaden tekst tymczasowy z `project-template.html`
