@@ -1,6 +1,6 @@
 # Koło Naukowe Matematyki Stosowanej
 
-Nasza strona -> [math-insight.github.io/math-insight](https://math-insight.github.io/math-insight/)
+Nasza strona -> [math-insight.github.io](https://math-insight.github.io/)
 
 ## Utrzymanie strony
 
@@ -18,6 +18,6 @@ Instrukcję pracy z repozytorium, krótki tutorial i listę kontrolną przed pub
 
 ## Hosting
 
-Strona jest hostowana na GitHub Pages z gałęzi `main` (folder główny `/`), bez własnej domeny. Każda zmiana wypchnięta na `main` jest publikowana automatycznie pod adresem <https://math-insight.github.io/math-insight/>.
+Strona jest hostowana na GitHub Pages z gałęzi `main` (folder główny `/`), bez własnej domeny. Każda zmiana wypchnięta na `main` jest publikowana automatycznie pod adresem <https://math-insight.github.io/>.
 
-Strona jest serwowana z podkatalogu `/math-insight/`, dlatego wszystkie ścieżki do plików lokalnych muszą być względne.
+Adres strony wynika z nazwy repozytorium (`math-insight.github.io`). Wszystkie ścieżki do plików lokalnych są względne, dzięki czemu strona działa niezależnie od adresu, pod którym jest serwowana.

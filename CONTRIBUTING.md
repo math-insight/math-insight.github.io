@@ -64,7 +64,7 @@ Wspólne style, ikony i favicon na podstronach projektów również korzystają 
 <a class="main-page-link" href="../index.html#projects">...</a>
 ```
 
-Nie używaj ścieżek zaczynających się od `/` (np. `/styles.css`). Strona jest serwowana przez GitHub Pages z podkatalogu `/math-insight/`, więc takie ścieżki wskazują poza stronę i kończą się błędem 404.
+Nie używaj ścieżek zaczynających się od `/` (np. `/styles.css`). Takie ścieżki działają tylko wtedy, gdy strona jest serwowana z katalogu głównego domeny. Przestają działać, gdy GitHub Pages serwuje stronę z podkatalogu (np. po zmianie nazwy repozytorium) albo gdy otwierasz plik bezpośrednio w przeglądarce.
 
 ### 4. Dodaj kartę projektu na stronie głównej
 
@@ -117,7 +117,7 @@ Wszystkie ścieżki do plików lokalnych są względne:
 - Pliki w katalogu głównym, takie jak `index.html`, używają ścieżek w rodzaju `styles.css` lub `images/...`
 - Pliki w `more-about-projects/` używają `../images/...`, `../styles.css` i `../index.html#projects`
 
-Strona jest hostowana na GitHub Pages pod adresem <https://math-insight.github.io/math-insight/>, czyli w podkatalogu, a nie w katalogu głównym domeny. Ścieżki zaczynające się od `/` są liczone od katalogu głównego domeny, więc na opublikowanej stronie nie działają.
+Strona jest hostowana na GitHub Pages pod adresem <https://math-insight.github.io/>. Ścieżki zaczynające się od `/` są liczone od katalogu głównego domeny, więc przestają działać, gdy strona trafia do podkatalogu. Ścieżki względne działają w obu przypadkach.
 
 Przy dodawaniu nowej treści najlepiej skopiować sposób zapisu ścieżek z najbardziej podobnego istniejącego pliku.
 
